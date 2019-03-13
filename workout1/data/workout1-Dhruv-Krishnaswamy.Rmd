@@ -1,0 +1,29 @@
+---
+title: "Golden State Warriors Article""
+author: "Dhruv Krishnaswamy"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+library(readr)
+shots_data <- read_csv("shots-data.csv")
+
+Ste <- filter(shots_data, name == 'Stephen Curry')
+
+Kev <- filter(shots_data, name == 'Kevin Durant')
+
+
+
+```
+
+## **The Meterorical Rise of the Golden State Warriors**
+
+#### **Introduction**
+Hailed as one of the most popular basketball teams of all time, the Golden State Warriors are currently dominating the western conference tables. This report analyzes their meteoric rise but performing an in depth analysis of the shooting percentages of their top players. 
+
+#### **Methodology**
+This report employs firstly employs graphics such as shot charts in order to analyse the performance of individual players. These shot charts comprise of scatterplots superimposed on an actual basketball court in order to better understand where these players scored from. For instance, colors have been used to differentiate when a players has scored a 3 pointer vs a 2 pointer. Additionally, we use facetted shot charts in order to give the readers an opportunity to compare the performance of players side by side. Another interesting tool that aided in our research was the inclusion of specific tables such as the  2PT effective shooting % per playe or the 3PT effective shooting % by player. This gives us an empirical way to compare the performance of players rather than getting influenced by bias. Our analysis also allowed us to make a judgement on who might be the most valuable player in the Golden State warriors. We based this solely on empricial evidence pertaining to the shooting percentages of individual players. This means that in particular we considered the efefctive shooting % by player. As a statistic, this essentially translates to the question **'From all the shots that a player took, how many were actaully successful?'**. This gives us an good way to measure the effectiveness of a player. 
+
+#### **Data used for Analaysis **
+
+The data used for this analysis was open source, free data obtained NBA records about the shooting records of each player. This raw data was in the form of a csv file and was imported and analysed using the statistical and data analysis language R
