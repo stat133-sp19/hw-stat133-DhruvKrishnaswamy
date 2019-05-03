@@ -1,0 +1,17 @@
+Package: binomial
+Type: Package
+Title: Binomial package
+Version: 0.1.0
+Author: Dhruv Krishnaswamy
+Maintainer: The package maintainer <dkrishnaswamy@berkeley.edu>
+Description: 
+    This package has functions that make operations on binomial distributions easier
+License: MIT License
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
